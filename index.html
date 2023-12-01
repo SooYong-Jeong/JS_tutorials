@@ -3,15 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <h2 id="hello">Hello</h2>
-        <h2 id="hi">부앙부앙</h2>
+        <h2 id="hello">umm</h2>
+        <div class="alert-box" id ="alert"><button onclick="document.getElementById('alert').style.display = 'none'">x</button>Alert Box </div>
+        <button onclick="document.getElementById('alert').style.display = 'block'">push</button>
     </body>
     <script>
+        document.getElementById('hi').innerHTML = '디로링'
 
-        document.getElementById('hello').innerHTML = 'Hellooooo';
-        document.getElementById('hi').innerHTML = '디로링';
+/**        document.getElementById('hello').innerHTML = 'Hellooooo'; */
+/**       document.getElementById('hi').innerHTML = '디로링'; */
 
     </script>
 </html>
