@@ -7,10 +7,16 @@
     </head>
     <body>
         <h2 id="hello">umm</h2>
-        <div class="alert-box" id ="alert"><button onclick="document.getElementById('alert').style.display = 'none'">x</button>Alert Box </div>
-        <button onclick="document.getElementById('alert').style.display = 'block'">push</button>
+        <div class="alert-box" id ="alert">
+            <button onclick="style_display('none')">x</button>Alert Box 
+        </div>
+        <button onclick="style_display('block')">push</button>
     </body>
     <script>
+        function style_display(state){
+            document.getElementById('alert').style.display = state;
+        }
+
         document.getElementById('hi').innerHTML = '디로링'
 
 /**        document.getElementById('hello').innerHTML = 'Hellooooo'; */
