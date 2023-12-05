@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body style=" background-color:rgb(71, 87, 71)">
+        <div class="alert-box" id="alert">
+        <p id="text">BOX</p>
+        <button id="close"> X </button>
+        </div>
+
+        <button id = "open">push</button>
+<!--
+        <h2 id="hello">umm</h2>
+        <div class="alert-box" id ="alert">
+            <button onclick="style_display('none')">x</button>Alert Box 
+        </div>
+        <button onclick="style_display('block')">push</button>
+        <br>
+        <button onclick="one_two(1)">1</button>
+        <button onclick="one_two(2)">2</button>
+        <p id = "onetwo"></p>
+-->
+
+    </body>
+    <script>
+        document.getElementById('open').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'block';
+        });
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'none';
+        });
+        
+/**        function style_display(state){
+            document.getElementById('alert').style.display = state;
+        }
+        function one_two(num){
+            if(num == 2){
+                document.getElementById('onetwo').innerHTML = '\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0ㄴtwo';
+            }
+            else if(num == 1){
+                document.getElementById('onetwo').innerHTML = 'ㄴone';
+            };
+        }
+        document.getElementById('hi').innerHTML = 'ding'
+
+        document.getElementById('hello').innerHTML = 'Hellooooo'; 
+        document.getElementById('hi').innerHTML = 'ding'; 
+*/
+
+    </script>
+</html>
