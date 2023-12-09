@@ -5,10 +5,18 @@
         <title>Document</title>
         <link rel="stylesheet" href="main.css">
     </head>
-    <body style=" background-color:rgb(71, 87, 71)">
+    <body style=" background-color:rgb(51, 97, 51)">
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <h4 id="test">그렇다</h4>
+        <button id="Discord_button">Discord</button>
+        <button id="Kakao_button">Kakao</button>
         <script>
+            document.getElementById('Discord_button').addEventListener('click', function(){
+                window.location = 'http://localhost:8080/discord';
+            });
+            document.getElementById('Kakao_button').addEventListener('click', function(){
+                window.location = 'http://localhost:8080/kakao';
+            });
             //$('#test').html('그러하다').css('color', 'red').attr('src')
             $('#test').addClass('yellow-bg')
         </script>

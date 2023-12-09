@@ -12,3 +12,11 @@ app.get('/discord', function(req, res){
 app.get('/kakao', function(req, res){
     res.send('kakao death');
 });
+
+app.get('/', function(req, res){
+    res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/old', function(req, res){
+    res.sendFile(__dirname + '/index_old.html');
+});
