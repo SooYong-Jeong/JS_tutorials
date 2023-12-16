@@ -6,6 +6,7 @@
     <title>API</title>
   </head>
   <body>
+    <button herf="/">Home</button>
       <h1 id="sound"></h1>
       <input id="name" type="text">
       <button onclick="get_Sound()">request API</button>
@@ -18,8 +19,6 @@
             console.log(data.sound)
             document.getElementById('sound').innerHTML = data.sound
           });
-          
-
             }
     </script>
   </body>
