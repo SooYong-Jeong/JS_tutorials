@@ -18,7 +18,6 @@ app.listen(8080, function(){
 // app.get('/discord', function(req, res){
 //     res.send('discord death');
 // });
-
 // app.get('/kakao', function(req, res){
 //     res.send('kakao death');
 // });
