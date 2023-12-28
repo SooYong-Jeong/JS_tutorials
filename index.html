@@ -11,7 +11,6 @@
       <input id="name" type="text">
       <button onclick="get_Sound()">request API</button>
     <script>
-      
         function get_Sound() {
           const name = document.getElementById('name').value
           fetch(`http://localhost:8080/sound/${name}`)
